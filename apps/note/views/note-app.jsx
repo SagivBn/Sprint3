@@ -1,8 +1,8 @@
 
-export class NoteIndex extends React.Component {
+export class NoteApp extends React.Component {
     render() {
         return (
-            <div>note app</div>
+            <div>note app yoooooooo</div>
         )
     }
 }

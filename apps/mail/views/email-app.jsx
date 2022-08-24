@@ -1,8 +1,8 @@
 
-export class MailIndex extends React.Component {
+export class MailApp extends React.Component {
     render() {
         return (
-            <div>mail app</div>
+            <div>email app</div>
         )
     }
 }
