@@ -1,12 +1,13 @@
 import { noteService } from "../services/note.service.js"
-import { noteList } from "../cmps/note-list.jsx"
-
+import { NoteList } from "../cmps/note-list.jsx"
 
 export class NoteApp extends React.Component {
 
+
     state = {
         notes: [],
-        filterBy: null
+        filterBy: null,
+        selectedNote: null
     }
     componentDidMount() {
         this.loadNotes()
@@ -14,6 +15,10 @@ export class NoteApp extends React.Component {
 
     onSetFilter = (filterBy) => {
         this.setState({ filterBy }, this.loadNotes())
+    }
+    onSelectNote = (noteId) => {
+        noteService.getById(noteId)
+            .then(note => this.setState({ selectedNote: note }))
     }
 
     loadNotes = () => {
@@ -26,20 +31,15 @@ export class NoteApp extends React.Component {
     render() {
         const { notes, filterBy } = this.state
         return <section>
-            hello
             {/* <NoteFilter filterBy={filterBy} onSetFilter={this.onSetFilter} /> */}
-            <noteList notes={notes} />
+            <NoteList notes={notes} />
         </section>
     }
 }
 
 
-// import { BookDetails } from "./book-details.jsx"
-// import { BookFilter } from "../cmps/book-filter.jsx"
-// import { BookList } from "../cmps/book-list.jsx"
-// import { bookService } from "../services/book.service.js"
 
-// export class BookApp extends React.Component {
+
 
 //     state = {
 //         books: [],

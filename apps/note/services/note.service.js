@@ -58,6 +58,13 @@ function query(filterBy) {
     return Promise.resolve(notes)
 }
 
+function editNote(noteId, key, value) {
+    const note = getById(noteId)
+    if (!note) return Promise.resolve(null)
+    note.info[key] = value
+    return Promise.resolve({ note })
+}
+
 
 function getById(id) {
     if (!id) return Promise.resolve(null)

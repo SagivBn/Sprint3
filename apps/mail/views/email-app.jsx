@@ -1,4 +1,4 @@
-import {emailService} from '../services/email.service.js';
+import { emailService } from '../services/email.service.js';
 
 export class MailApp extends React.Component {
     state = {
@@ -12,20 +12,20 @@ export class MailApp extends React.Component {
     }
 
     loadEmails = () => {
-        emailService.query(this.state.filterBy).then(emailsToShow => this.setState({emailsToShow}));
+        emailService.query(this.state.filterBy).then(emailsToShow => this.setState({ emailsToShow }));
     };
 
     onSetFilter = filterBy => {
-        this.setState({filterBy}, this.loadEmails());
+        this.setState({ filterBy }, this.loadEmails());
     };
 
     onCreateEmail = () => {
-        return emailService.query(this.state.filterBy).then(emailsToShow => this.setState({emailsToShow}));
-    };
+        return emailService.query(this.state.filterBy).then(emailsToShow => this.setState({ emailsToShow }))
+    }
 
     render() {
-        const {emailsToShow} = this.state;
-        const {onCreateEmail} = this;
+        const { emailsToShow } = this.state;
+        const { onCreateEmail } = this;
         //we can add loading animation here
         if (!emailsToShow) return <h1>Loading...</h1>;
         return (
