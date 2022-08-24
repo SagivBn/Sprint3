@@ -1,7 +1,7 @@
-import {storageService} from '.services/storage.service.js';
-import {utilService} from '.services/utile.service.js';
+import {storageService} from '../../../services/storage.service.js';
+import {utilService} from '../../../services/util.service.js';
 
-export const bookService = {
+export const emailService = {
     query,
     getEmailById,
     returnNextEmailId,
@@ -141,7 +141,7 @@ function query(filterBy) {
         txt: 'puki', // no need to support complex text search
         isRead: true, // (optional property, if missing: show all)
         isStared: true, // (optional property, if missing: show all)
-        lables: ['important', 'romantic'], // has any of the labels
+        labels: ['important', 'romantic'], // has any of the labels
     };
     if (!emails) {
         emails = _createEmails();
@@ -193,9 +193,9 @@ function returnPrevEmailId(emailId) {
 }
 
 function _saveToStorage(emails) {
-    storageService._saveToStorage(KEY, emails);
+    storageService.saveToStorage(KEY, emails);
 }
 
 function _loadFromStorage() {
-    return storageService._loadFromStorage(KEY);
+    return storageService.loadFromStorage(KEY);
 }
