@@ -1,7 +1,7 @@
 import { AppHeader } from './cmps/app-header.jsx'
 import { About } from './views/about.jsx'
 import { Home } from './views/home.jsx'
-import { MailApp } from './apps/mail/views/mail-app.jsx'
+import { MailApp } from './apps/mail/views/email-app.jsx'
 import { NoteApp } from './apps/note/views/note-app.jsx'
 
 const Router = ReactRouterDOM.HashRouter
