@@ -1,5 +1,7 @@
 import { noteService } from "../services/note.service.js"
 import { NoteList } from "../cmps/note-list.jsx"
+import { NoteAdd } from "../cmps/note-add.jsx"
+
 
 export class NoteApp extends React.Component {
 
@@ -32,6 +34,7 @@ export class NoteApp extends React.Component {
         const { notes, filterBy } = this.state
         return <section>
             {/* <NoteFilter filterBy={filterBy} onSetFilter={this.onSetFilter} /> */}
+            <NoteAdd />
             <NoteList notes={notes} />
         </section>
     }
