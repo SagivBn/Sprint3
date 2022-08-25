@@ -9,7 +9,6 @@ export function NoteList({ notes }) {
     
     return <section className="note-list grid">
         {notes.map(note => <article className="note" key={note.id}>
-            key = {note.id}
             <NotePreview note={note} />
         </article>)}
     </section>
