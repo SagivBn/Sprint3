@@ -12,6 +12,7 @@ const gNotes = [
         type: "note-txt",
         isPinned: true,
         info: {
+            title: "BeSTack" ,
             txt: "Fullstack Me Baby!"
         }
     },
@@ -30,7 +31,7 @@ const gNotes = [
         id: "n103",
         type: "note-todos",
         info: {
-            label: "Get my stuff together",
+            title: "Get my stuff together",
             todos: [
                 { txt: "Driving liscence", doneAt: null },
                 { txt: "Coding power", doneAt: 187111111 }
