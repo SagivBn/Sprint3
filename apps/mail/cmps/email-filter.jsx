@@ -35,10 +35,46 @@ export class EmailFilter extends React.Component {
         const {search, isRead} = this.state.filterBy;
         return (
             <section className='email-filter'>
+                <div className='header'>
+                    <div className='header-left'>
+                        <span className='material-icons'> menu </span>
+                        <img src='\assets\img\logo.png'></img>
+                    </div>
+
+                    <div className='header-middle'>
+                        <span className='material-icons'> search </span>
+                        <input type='text' placeholder='Search mail' />
+                        <span className='material-icons'> arrow_drop_down </span>
+                    </div>
+
+                    <div className='header-right'>
+                        <span className='material-icons'> apps </span>
+                        <span className='material-icons'> notifications </span>
+                        <span className='material-icons'> account_circle </span>
+                    </div>
+                </div>
+                <div className='emailList'>
+                    <div className='emailList-settings'>
+                        <button className='sidebar-compose'>
+                            <span className='material-icons'> add </span>Compose
+                        </button>
+                        <div className='emailList-settingsLeft'>
+                            <input type='checkbox' />
+                            <span className='material-icons'> arrow_drop_down </span>
+                            <span className='material-icons'> redo </span>
+                            <span className='material-icons'> more_vert </span>
+                        </div>
+                        <div className='emailList-settingsRight'>
+                            <span className='material-icons'> chevron_left </span>
+                            <span className='material-icons'> chevron_right </span>
+                            <span className='material-icons'> keyboard_hide </span>
+                            <span className='material-icons'> settings </span>
+                        </div>
+                    </div>
+                </div>
+
                 <form onSubmit={this.onFilter} className='email-form'>
-                    <label className='email-search-label' htmlFor='by-search'>
-                        Search Email:
-                    </label>
+                    <label className='email-search-label' htmlFor='by-search'></label>
                     <input
                         ref={this.inputRef}
                         className='email-input-by-search'

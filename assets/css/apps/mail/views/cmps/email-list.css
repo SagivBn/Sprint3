@@ -1,0 +1,50 @@
+.email-list {
+    background-color: var(--main-bg-color);
+}
+
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: #818181;
+}
+
+.sidebarOption .material-icons {
+    padding: 5px;
+}
+
+.sidebarOption h3 {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidebarOption:hover,
+.sidebarOption:hover h3,
+.sidebarOption:hover .material-icons,
+.sidebarOption__active,
+.sidebarOption__active h3,
+.sidebarOption__active .material-icons {
+    background-color: rgb(32, 33, 36);
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.sidebar-footer {
+    padding-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebar-footerIcons .material-icons {
+    margin: 7px;
+    cursor: pointer;
+}
+.material-icons {
+    color: white;
+}

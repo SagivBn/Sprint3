@@ -1,6 +1,11 @@
 header {
-    background: lightcyan;
-    border-bottom: 2px solid white;
+    background: var(--main-bg-color);
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-color);
 }
 
 .app-header {
@@ -10,7 +15,7 @@ header {
 }
 
 nav a {
-    margin: .5em;
+    margin: 0.5em;
 }
 
 nav a:active {

@@ -1,0 +1,108 @@
+.email-filter {
+    background-color: var(--main-bg-color);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-left img {
+    object-fit: contain;
+    height: 80px;
+    margin-left: 5px;
+}
+
+.header span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.material-icons {
+    color: white;
+}
+
+.header-middle input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+}
+
+.header-right {
+    display: flex;
+    padding-right: 20px;
+}
+
+.header-right span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header-middle {
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: rgb(32, 33, 36);
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 238px;
+}
+
+/* email list */
+.emailList {
+    flex: 1;
+}
+
+.emailList-settings {
+    position: sticky;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.emailList-settingsLeft {
+    display: flex;
+    align-items: center;
+}
+
+.emailList-settings .material-icons {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.sidebar-compose {
+    /* margin-top: 15px; */
+    margin-left: 10px;
+    /* margin-bottom: 15px; */
+    text-transform: capitalize;
+    color: gray;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(32, 33, 36);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+    height: 56px;
+}
