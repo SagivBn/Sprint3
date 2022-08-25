@@ -1,4 +1,5 @@
 .email-preview {
+    display: flex;
     text-align: left;
     padding: 5px;
     background-color: var(--main-bg-color);
@@ -17,4 +18,28 @@
 .email-header-left {
     display: flex;
     align-items: center;
+}
+
+.material-star {
+    width: 30px;
+}
+
+.material-label {
+    width: 30px;
+}
+
+.email-checkbox {
+    width: 30px;
+}
+
+.email-from {
+    flex-grow: 2;
+    max-width: 15%;
+    margin-left: 25px;
+}
+
+.email-data {
+    flex-grow: 8;
+    /* text-align: center; */
+    margin-left: 45px;
 }

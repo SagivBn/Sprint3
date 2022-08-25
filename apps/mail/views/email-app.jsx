@@ -2,6 +2,7 @@ import {emailService} from '../services/email.service.js';
 
 import {EmailFilter} from '../cmps/email-filter.jsx';
 import {EmailList} from '../cmps/email-list.jsx';
+import {EmailSideBar} from '../cmps/email-sidebar.jsx';
 
 export class MailApp extends React.Component {
     state = {
@@ -35,8 +36,8 @@ export class MailApp extends React.Component {
             <section>
                 {/* <NewEmail createEmail={onCreateEmail} /> */}
                 <EmailFilter onSetFilter={this.onSetFilter} />
-                <section className='email-content grid'>
-                    {/*<EmailSideBar /> */}
+                <section className='email-content'>
+                    <EmailSideBar />
                     <EmailList emails={emailsToShow} history={this.props.history} />
                 </section>
             </section>

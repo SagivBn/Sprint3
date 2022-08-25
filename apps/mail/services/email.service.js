@@ -123,6 +123,7 @@ function _createEmails() {
             isRead: false,
             sentAt: 1551133930594,
             to: 'user@appsus.com',
+            from: 'Facebook',
         },
         {
             id: 'e113',
@@ -131,6 +132,7 @@ function _createEmails() {
             isRead: false,
             sentAt: 1551133930594,
             to: 'user@appsus.com',
+            from: 'Facebook',
         },
     ];
 }

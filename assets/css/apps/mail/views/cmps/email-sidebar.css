@@ -1,6 +1,7 @@
-.email-list {
+.email-sidebar {
     background-color: var(--main-bg-color);
-    flex-grow: 8;
+    flex-grow: 2;
+    height: 100%;
 }
 
 .sidebarOption {
